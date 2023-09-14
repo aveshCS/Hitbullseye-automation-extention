@@ -6,21 +6,21 @@
     This script is free to use, do not pay anyone anything.
     To modify or redistribute, kindly follow the license agreement strictly.
 */
-console.log("This is background Script @tutoriex (Arijit Paria)");
+console.log("This is background Script @aveshCS (Avesh Singh)");
 
-let installURL = "https://www.youtube.com/@Tutoriex_?sub_confirmation=1";
+let installURL = "https://linktr.ee/shubhansu";
 chrome.runtime.onInstalled.addListener(function (details) {
   // console.log(details);
   if (details.reason === "install") {
     chrome.tabs.create({
-      url: "https://github.com/arijitparia2002",
+      url: "https://github.com/aveshCS",
     });
     chrome.tabs.create({
       url: installURL,
     });
     chrome.notifications.create({
-      title: "TUTORIEX",
-      message: "Please Subscribe to TUTORIEX YouTube Channel.",
+      title: "Avesh Singh",
+      message: "Please follow me on Github.",
       iconUrl: "icon.png",
       type: "basic",
     });
