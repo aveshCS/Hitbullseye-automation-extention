@@ -13,10 +13,10 @@ chrome.runtime.onInstalled.addListener(function (details) {
   // console.log(details);
   if (details.reason === "install") {
     chrome.tabs.create({
-      url: "https://github.com/aveshCS",
+      url: installURL,
     });
     chrome.tabs.create({
-      url: installURL,
+      url: "https://github.com/aveshCS",
     });
     chrome.notifications.create({
       title: "Avesh Singh",
